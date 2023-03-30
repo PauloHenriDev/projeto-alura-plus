@@ -16,7 +16,6 @@
 
 body {
     display: flex;
-
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
 }
@@ -120,7 +119,7 @@ strong {
     margin: 16px 0 10px 0;
     padding: 16px;
     width: 680px;
-    background-color: var(--botao-azul);
+    border: 1px solid var(--branco-principal);
     color: #FFF;
     border-radius: 8px;
     justify-content: center;
@@ -132,6 +131,7 @@ strong {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
+    width: 380px;
 }
 
 .grupo2 {
@@ -246,9 +246,53 @@ strong {
     text-align: center;
 }
 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape__teste {
+    padding: 0 0 100px 0;
+}
+
 .rodape__alura {
     font-family: var(--fonte-principal);
     font-size: var(--titulo);
     font-weight: var(--peso-texto);
     text-align: center;
+}
+
+.rodape__grupo {
+    display: flex;
+    padding: 0 0 24px 0;
+    gap: 16px;
+}
+
+.rodape__grupo__texto {
+    font-family: var(--fonte-principal);
+    font-size: var(--texto);
+    font-weight: var(--peso-texto);
+    color: var(--branco-principal);
+}
+
+.rodape__copyright {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 100px 0;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: var(--peso-texto);
+    line-height: 21px;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
 }
