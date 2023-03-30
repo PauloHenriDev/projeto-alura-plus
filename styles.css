@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Montserrat&display=swap');
 
 :root {
     --branco-principal: #FFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+
+    --fonte-principal: 'Inter', sans-serif;
+    --titulo: 48px;
+    --texto: 16px;
+    --peso-titulo: 700;
+    --peso-texto: 100;
+    --width-texto: 588px;
 }
 
 body {
     display: flex;
-    flex-direction: column;
+
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
 }
@@ -136,13 +143,13 @@ strong {
 }
 
 .grupo2__sessao__informacao {
-    margin: 200px 0 0 69px;
+    margin: 200px 0 0 350px;
 }
 
 .grupo2__sessao__informacao__titulo {
     margin: 0 0 8px 0;
     font-family: 'Inter', sans-serif;
-    font-size: 48px;
+    font-size: var(--titulo);
     font-weight: 700;
 }
 
@@ -156,13 +163,13 @@ strong {
 
 .grupo3 {
     display: flex;
-    margin: 153px 0 0 0;
+    margin: 153px 0 220px 0;
 }
 
 .grupo3__informacao {
     margin: 100px 110px 0 300px;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: var(--texto);
     font-weight: 400;
     width: 588px;
 }
@@ -182,4 +189,66 @@ strong {
 
 .grupo3__imagem {
     margin: 0 0 0 0px;
+}
+
+.grupo4 {
+    display: flex;
+    margin: 0 0 0 141px;
+}
+
+.grupo4__sessao {
+    margin: 100px 0 0 350px;
+}
+
+.grupo4__sessao__titulo {
+    font-family: var(--fonte-principal);
+    font-size: var(--titulo);
+    font-weight: var(--peso-titulo);
+}
+
+.grupo4__sessao__texto {
+    margin: 8px 0 0 0;
+    font-family: var(--fonte-principal);
+    font-size: var(--texto);
+    font-weight: var(--peso-texto);
+    line-height: 24px;
+    width: var(--width-texto);
+}
+
+.grupo5 {
+    display: flex;
+    flex-direction: column;
+    margin: 264px 0 0 0;
+    align-items: center;
+}
+
+.grupo5__titulo {
+    font-family: var(--fonte-principal);
+    font-size: var(--titulo);
+    font-weight: var(--peso-titulo);
+    text-align: center;   
+}
+
+.grupo5__plataformas {
+    display: flex;
+    margin: 40px 0 16px 0;
+}
+
+.grupo5__informacao {
+    display: flex;
+    flex-direction: row;
+}
+
+.grupo5__plataformas__texto {
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: var(--peso-titulo);
+    text-align: center;
+}
+
+.rodape__alura {
+    font-family: var(--fonte-principal);
+    font-size: var(--titulo);
+    font-weight: var(--peso-texto);
+    text-align: center;
 }
